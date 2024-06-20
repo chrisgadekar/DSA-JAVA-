@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int result = product();
+        System.out.println("The product of the two numbers is: " + result);
+    }
+
+    static int product() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your first number: ");
+        int num1 = in.nextInt();
+
+        System.out.print("Enter your second number: ");
+        int num2 = in.nextInt();
+
+        int product = num1 * num2;
+
+        return product;
+    }
+}
