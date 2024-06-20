@@ -1,21 +1,18 @@
 
 import java.util.Scanner;
 
-public class main{
+public class main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter your age :");
-        int age = in.nextInt();
-        if (age < 18) {
-            System.out.println("Not eligible to vote ");
-        }
-        if (age <= 18) {
-            System.out.println("Eligible to vote ");
-        }
+        System.out.print("enter your age : ");
+        int num = in.nextInt();
 
+        if (num <= 17) {
+            System.out.println("not eligible");
 
+        }
+        else {
+            System.out.println("eligible ");
+        }
     }
-
-
-    
 }
