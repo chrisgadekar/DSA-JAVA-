@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+
+
+public class main{
+    public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int [] arr1 = {1,2,3,4,5};
+    System.out.println("largest element in the array is : " + largest(arr1));
+    }
+    
+    static int largest(int[] arr1){
+        int max = arr1[0];
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] > max) {
+                max = arr1[i];
+
+            }
+            
+        }
+        return max;
+    }
+}
